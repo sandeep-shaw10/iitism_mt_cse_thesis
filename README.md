@@ -4,6 +4,18 @@ A LaTeX template for MTech CSE thesis at Indian Institute of Technology (ISM), D
 
 🔗 [View on Overleaf](https://www.overleaf.com/read/qbsrrprbqtzb#1157aa)
 
+## ✅ Download 
+
+#### 1. From Github
+- Download this Github repository as zip
+- Upload to overleaf
+
+#### 2. From Overleaf 
+- Open the link of project in Overleaf
+- Click on `File`
+- Click on `Make a Copy`
+- Now you can edit the copied file
+
 ---
 
 ## 📦 What’s inside
