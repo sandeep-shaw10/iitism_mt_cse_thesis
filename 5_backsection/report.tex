@@ -1,0 +1,11 @@
+% --- Turnitin Report Section ---
+\clearpage % Start on a new page
+
+% Removed: \addcontentsline{toc}{chapter}{Turnitin Similarity Report} 
+% Deleting the line above removes it from the Table of Contents.
+
+% Include only the 1st page
+\includepdf[pages={1}, pagecommand={\thispagestyle{plain}}]{assets/pdf/turnitin.pdf}
+
+% Include only the 8th page
+\includepdf[pages={8}, pagecommand={\thispagestyle{plain}}]{assets/pdf/turnitin_report.pdf}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+
+% Load custom configurations
+\input{custom/packages}
+\input{custom/commands}
+\input{config}
+
+\begin{document}
+
+% --- Title ---
+\include{1_titlepage/main}
+
+% --- Declaration ---
+\include{2_declaration/1_final_version}
+\include{2_declaration/2_student}
+\include{2_declaration/3_classified_data}
+\include{2_declaration/4_english_check}
+\include{2_declaration/5_copyright_consent}
+
+% --- Acknowledgement ---
+\include{3_frontsection/acknowledgements}
+
+% --- Abstract ---
+\include{3_frontsection/abstract}
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% List of Figures (Removed from TOC)
+\listoffigures
+\clearpage
+
+% List of Tables (Removed from TOC)
+\listoftables
+\clearpage
+
+% List of Abbreviations (Removed from TOC)
+\include{3_frontsection/abbreviations} 
+
+% --- Chapters ---
+\include{4_chapters/1_introduction}
+\include{4_chapters/2_literature}
+\include{4_chapters/3_methodology}
+\include{4_chapters/4_result}
+\include{4_chapters/5_conclusion}
+
+% --- Back Matter ---
+\include{5_backsection/reference}
+
+% --- Turnitin Report (Removed from TOC) ---
+\include{5_backsection/report}
+
+\end{document}

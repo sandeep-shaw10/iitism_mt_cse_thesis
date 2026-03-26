@@ -1,0 +1,54 @@
+% --- Header and Footer Setup (Fancyhdr) ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+
+
+% --- Regular Pages (Top Header) ---
+% Using \uppercase forces "Chapter 4. Results and Analysis" 
+% into "CHAPTER 4. RESULTS AND ANALYSIS" in the header.
+\fancyhead[L]{\uppercase{\leftmark}} 
+\fancyhead[R]{\thepage}                % Page number on the right
+\renewcommand{\headrulewidth}{0.4pt}   % Horizontal line under header
+
+
+% --- Chapter Opening Pages (Bottom Footer) ---
+\fancypagestyle{plain}{
+  \fancyhf{} 
+  \fancyfoot[C]{\thepage} 
+  \renewcommand{\headrulewidth}{0pt} 
+}
+
+
+% Reduces top margin space (standard is 50pt, we use -20pt)
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Formatting for the Chapter X and Title text
+\titleformat{\chapter}[display]
+ {\normalfont \huge \bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Huge}
+
+% --- Hyperlink Configuration ---
+\hypersetup{
+    colorlinks=true,      % Set to false if you want no color
+    linkcolor=black,       % Color of internal links (sections, etc.)
+    citecolor=black,       % Color of bibliographic links
+    filecolor=magenta,    
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+
+% --- Thesis Metadata Variables ---
+\newcommand{\mysalutation}{Ms}
+\newcommand{\myname}{Shweta Shaw}
+\newcommand{\myrollno}{24MT0388}
+\newcommand{\myday}{4}
+\newcommand{\mymonth}{May}
+\newcommand{\myyear}{2025}
+\newcommand{\mythesistitle}{Blockchain-Based Framework for Employee Experience Certificate Verification}
+\newcommand{\myguide}{Prof. Arup Kumar Pal}
+\newcommand{\myhod}{Prof. Chiranjeev Kumar}
+\newcommand{\mydept}{Department of Computer Science and Engineering}
+\newcommand{\myinst}{Indian Institute of Technology (Indian School of Mines), Dhanbad}
+\newcommand{\myHouse}{23/1/A/H/17 M.G.Road}
+\newcommand{\myTown}{Kharagpur}
+\newcommand{\myDistrict}{Paschim Medinipur}
+\newcommand{\myState}{West Bengal, 7XXXXX}
